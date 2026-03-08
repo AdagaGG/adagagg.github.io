@@ -147,6 +147,27 @@ main {
     border-color: rgba(40, 167, 69, 0.3);
 }
 
+/* Category Borders */
+.card-materials {
+    border-left: 3px solid rgba(0, 90, 181, 0.6);
+    transition: all 0.3s ease;
+}
+
+.card-materials:hover {
+    border-left: 3px solid rgba(0, 90, 181, 1);
+    box-shadow: 0 4px 12px rgba(0, 90, 181, 0.15);
+}
+
+.card-ai {
+    border-left: 3px solid rgba(40, 167, 69, 0.6);
+    transition: all 0.3s ease;
+}
+
+.card-ai:hover {
+    border-left: 3px solid rgba(40, 167, 69, 1);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+}
+
 .project-content p {
     color: var(--text-secondary);
     font-size: 0.95rem;
