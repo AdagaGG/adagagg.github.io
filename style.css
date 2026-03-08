@@ -122,6 +122,31 @@ main {
     margin-bottom: 0.5rem;
 }
 
+/* Tag colors for Ecosystem */
+.tag-metalurgia {
+    background-color: rgba(0, 90, 181, 0.15);
+    color: #4da6ff;
+    border-color: rgba(0, 90, 181, 0.3);
+}
+
+.tag-materials {
+    background-color: rgba(142, 68, 173, 0.15);
+    color: #c39bd3;
+    border-color: rgba(142, 68, 173, 0.3);
+}
+
+.tag-nlp {
+    background-color: rgba(230, 126, 34, 0.15);
+    color: #f5b041;
+    border-color: rgba(230, 126, 34, 0.3);
+}
+
+.tag-ds {
+    background-color: rgba(40, 167, 69, 0.15);
+    color: #28a745;
+    border-color: rgba(40, 167, 69, 0.3);
+}
+
 .project-content p {
     color: var(--text-secondary);
     font-size: 0.95rem;

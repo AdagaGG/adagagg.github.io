@@ -22,9 +22,7 @@
             <nav>
                 <ul>
                     <li><a href="#lig">LIG Engine</a></li>
-                    <li><a href="#metalurgia">Metalurgia</a></li>
-                    <li><a href="#biopv">Bio-PV</a></li>
-                    <li><a href="#automatizacion">Automatización</a></li>
+                    <li><a href="#ecosistema">Ecosistema I+D</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,53 +61,112 @@
             </div>
         </section>
 
-        <!-- Metalurgia -->
-        <section id="metalurgia" class="project-card">
+
+        <!-- Ecosistema de Proyectos (I+D Local) -->
+        <section id="ecosistema" class="section-title">
+            <h2 class="ecosistema-header">> Ecosistema de Proyectos [Catálogo Local de I+D]</h2>
+        </section>
+
+        <!-- 1. Metalografia IA -->
+        <section class="project-card ecosystem-card">
             <header class="project-header">
-                <h3>[02] Análisis Metalúrgico AISI 4140</h3>
-                <span class="tech-badge">Templabilidad</span>
-                <span class="tech-badge">Ensayo Jominy</span>
+                <h3>[05] Análisis Metalográfico con IA (ASTM E112 / E562)</h3>
+                <span class="tech-badge tag-metalurgia">Computer Vision</span>
+                <span class="tech-badge tag-metalurgia">Metalurgia Física</span>
+                <span class="tech-badge">Antigravity Architecture</span>
             </header>
             <div class="project-content">
-                <p>Estudio de gradiente de dureza y microestructuras (martensita, bainita, perlita) post-tratamiento
-                    térmico de temple y revenido controlado.</p>
+                <p>Cálculo planimétrico computarizado de tamaño de grano (ASTM E112) y fracción volumétrica de fases
+                    estocásticas (ASTM E562).</p>
+                <div class="tech-details">
+                    <p><strong>Motor Matemático:</strong> Integración de procesamiento óptico vectorial (Gaussian Blur
+                        3x3, CLAHE) con inferencia <code>Float16</code> vía <code>MobileSAM</code>. El algoritmo aplica
+                        clasificación termodinámica hipereutectoide diferenciando fases perlíticas y cementíticas
+                        mediante histogramas y filtros de barrera absoluta (≥80% ROI_exclusion).</p>
+                </div>
+                <div class="project-gallery">
+                    <figure class="gallery-item">
+                        <img src="assets/projects/metalografia/astm_segmentation_ui.png" alt="UI Segmentación MatSAM"
+                            loading="lazy">
+                        <figcaption class="gallery-caption">> Segmentación MatSAM Float16. Overlay validado vs ROI.
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="assets/projects/metalografia/astm_segmentation_closeup.png"
+                            alt="Detalle de contornos policristalinos" loading="lazy">
+                        <figcaption class="gallery-caption">> Detalle planimétrico. Extracción de límites
+                            termo-hipereutectoides.</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="assets/projects/metalografia/astm_results_charts.png" alt="Metadata Numérica y Fase"
+                            loading="lazy">
+                        <figcaption class="gallery-caption">> E562: 93% Perlita, 7% Cementita. Histograma E112
+                            Area/Grano.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AgNP OS -->
+        <section class="project-card ecosystem-card">
+            <header class="project-header">
+                <h3>[06] Sistema Operativo Industrial AgNP</h3>
+                <span class="tech-badge tag-materials">Química Verde</span>
+                <span class="tech-badge tag-materials">Nanotecnología</span>
+                <span class="tech-badge">Optimización Predictiva</span>
+            </header>
+            <div class="project-content">
+                <p>Pipeline robusto de síntesis y caracterización de nanopartículas de plata (AgNPs) biogénicas usando
+                    extractos etanólicos vegetales.</p>
+                <div class="tech-details">
+                    <p><strong>Infraestructura:</strong> Subsistema operativo que procesa ingestión masiva de archivos
+                        físicos de caracterización (Lichen biomass, Annona muricata) habilitando diseño inverso a través
+                        de hiper-parámetros predictivos de síntesis química.</p>
+                </div>
                 <div class="data-viz-placeholder">
-                    <span class="viz-label"># Insertar gráfica aquí (Ej. Curva Jominy HRC vs Distancia)</span>
+                    <span class="viz-label"># [Enlace de Ingestión] Visualización de espectrometría UV-Vis y mapeo XRD
+                        (Annona muricata data).</span>
                     <div class="skeleton-chart"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Bio-PV -->
-        <section id="biopv" class="project-card">
+        <!-- 3. NOM-035 -->
+        <section class="project-card ecosystem-card">
             <header class="project-header">
-                <h3>[03] Bio-PV: Innovación Fotovoltaica</h3>
-                <span class="tech-badge">Celdas Solares</span>
-                <span class="tech-badge">Macroalgas</span>
+                <h3>[07] Analizador IA NOM-035-STPS-2018</h3>
+                <span class="tech-badge tag-nlp">NLP Pysentimiento</span>
+                <span class="tech-badge tag-nlp">STPS Compliance</span>
+                <span class="tech-badge">RAG Híbrido</span>
             </header>
             <div class="project-content">
-                <p>Desarrollo y caracterización eléctrica de celdas fotovoltaicas orgánicas de 3ra generación basadas en
-                    pigmentos fotosintéticos extraídos de macroalgas.</p>
-                <div class="data-viz-placeholder">
-                    <span class="viz-label"># Insertar gráfica aquí (Ej. Curva J-V / Eficiencia Cuántica)</span>
-                    <div class="skeleton-chart"></div>
+                <p>Suite técnica para la evaluación escalable de factores de riesgo psicosocial en la industria pesada y
+                    procesos de forja (NOM-035).</p>
+                <div class="tech-details">
+                    <p><strong>Arquitectura Pipeline:</strong> Emplea un análisis de sentimiento base tipo Transformer
+                        (BETO) acoplado a un motor RAG asíncrono con Ollama (Phi3.5). Opera sobre una topología SQLite
+                        local anonimizada criptográficamente (SHA-256) para salvaguardar el escrutinio normativo de
+                        recursos humanos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Automation -->
-        <section id="automatizacion" class="project-card">
+        <!-- 4. Quant Refinery -->
+        <section class="project-card ecosystem-card">
             <header class="project-header">
-                <h3>[04] Pipeline ETL para Business Intelligence</h3>
-                <span class="tech-badge">Python (Pandas)</span>
-                <span class="tech-badge">Data Engineering</span>
+                <h3>[08] 🏭 The Quant Refinery v4.1</h3>
+                <span class="tech-badge tag-ds">XGBoost Algorithmic</span>
+                <span class="tech-badge tag-ds">Econometría</span>
+                <span class="tech-badge">Series Temporales</span>
             </header>
             <div class="project-content">
-                <p>Automatización de extracción, transformación y carga (ETL) de datos de producción masiva para
-                    tableros de rendimiento (OEE).</p>
-                <div class="data-viz-placeholder">
-                    <span class="viz-label"># Insertar gráfica aquí (Ej. Diagrama de Flujo de Datos o Dashboard)</span>
-                    <div class="skeleton-chart"></div>
+                <p>Sistema dinámico de análisis y radar multivariado para modelado predictivo del mercado de valores.
+                </p>
+                <div class="tech-details">
+                    <p><strong>Modelo de Inferencia:</strong> Controlador heurístico supervisado tipo PID Inteligente
+                        alimentado por un Gradient Boosting Tree (XGBoost). Implementa cálculo asíncrono robusto de
+                        tensores TA (RSI, Bollinger, MACD) y mapeo cruzado de correlaciones vía Plotly, estructurado
+                        bajo un "Unified View" unistate.</p>
                 </div>
             </div>
         </section>
