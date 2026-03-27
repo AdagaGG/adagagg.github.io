@@ -1,39 +1,51 @@
-# adaga.tech - Portafolio I+D
+# adaga.tech - Technical Portfolio
 
-Portafolio técnico para perfiles de Investigación y Desarrollo (I+D) en Ingeniería en Materiales y Automatización. Optimizado para reclutadores de Mitacs y DAAD.
+Portfolio web de una sola pagina enfocado en AI Systems, Computer Vision, NLP aplicado a NOM-035 y automatizacion tecnica.
 
-## Estructura
+## Estado actual
 
-- `index.html`: Marcado semántico y estructura de datos.
-- `style.css`: Estilos "Dark Mode" tipo terminal industrial.
-- Placeholders preparados para integraciones futuras de visualización de datos (Matplotlib, Plotly, D3.js).
+- Dominio activo esperado: `adaga.tech`.
+- UI principal: `index.html` (Tailwind CDN + estilos embebidos).
+- Navegacion SPA con anclas internas y `scroll-behavior: smooth`.
+- Layout optimizado para desktop y mobile.
 
-## Despliegue en GitHub Pages con Dominio Personalizado (adaga.tech)
+## Estructura del repositorio
 
-Para servir este portafolio bajo el dominio `adaga.tech`, sigue estos pasos exactos:
+- `index.html`: Sitio productivo publicado en GitHub Pages.
+- `assets/projects/`: Evidencias visuales y CV PDF usado por la UI.
+- `CNAME`: Dominio personalizado (`adaga.tech`).
+- `archive/legacy/`: Archivos y versiones previas movidas fuera de produccion.
 
-### 1. Preparación del Repositorio
-1. Crea un repositorio en GitHub (ej. `adaga-portfolio`).
-2. Sube los archivos `index.html`, `style.css` y este `README.md` a la rama `main` (o `master`).
+## Historial de implementacion
 
-### 2. Configuración en GitHub
-1. Ve a los **Settings** de tu repositorio en GitHub.
-2. Navega a la sección **Pages** (menú lateral izquierdo).
-3. En **Source**, selecciona `Deploy from a branch`.
-4. En **Branch**, selecciona `main` y la carpeta `/ (root)`. Guarda los cambios.
-5. En la sección **Custom domain**, escribe `adaga.tech` y haz clic en **Save**. Esto generará automáticamente un archivo llamado `CNAME` en tu repositorio.
+Se registro un resumen de cambios en:
 
-### 3. Configuración del Proveedor de Dominio (DNS)
-Ingresa al panel de administración donde compraste `adaga.tech` (Namecheap, GoDaddy, Cloudflare, etc.) y configura los siguientes registros DNS:
+- `docs/IMPLEMENTATION_LOG.md`
 
-**Registros A (A Records) apuntando a las IPs de GitHub:**
-- Type: `A`, Host/Name: `@`, Value: `185.199.108.153`
-- Type: `A`, Host/Name: `@`, Value: `185.199.109.153`
-- Type: `A`, Host/Name: `@`, Value: `185.199.110.153`
-- Type: `A`, Host/Name: `@`, Value: `185.199.111.153`
+Incluye ajustes de contenido real, limpieza de placeholders, mejoras mobile, y organizacion del workspace.
 
-**Registro CNAME (Para el subdominio www):**
-- Type: `CNAME`, Host/Name: `www`, Value: `TU_USUARIO.github.io` (reemplaza `TU_USUARIO` con tu nombre de usuario de GitHub).
+## Mantenimiento rapido
 
-### 4. Seguridad (HTTPS)
-Regresa a GitHub Pages (*Settings > Pages*) y espera a que la propagación DNS termine (puede tardar desde 15 minutos hasta 24 horas). Una vez detectado, asegúrate de marcar la casilla **"Enforce HTTPS"**.
+1. Editar contenido visual y copy en `index.html`.
+2. Agregar/reemplazar assets en `assets/projects/`.
+3. Verificar rutas relativas de imagenes y PDF.
+4. Hacer commit y push a `main` para desplegar.
+
+## Preview local
+
+En Windows PowerShell:
+
+```powershell
+py -m http.server 5500
+```
+
+Abrir:
+
+- `http://127.0.0.1:5500/index.html`
+
+## GitHub Pages y dominio
+
+- Branch de despliegue: `main`.
+- Carpeta de despliegue: `/ (root)`.
+- Custom domain en Pages: `adaga.tech`.
+- Mantener `CNAME` versionado en el repositorio.
