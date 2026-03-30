@@ -48,4 +48,4 @@ Open in your browser:
 
 ## Personal note
 
-Yes — I wrote this myself (6th semester Materials Engineering student). I'm still learning and building practical projects; if my profile interests you, please get in touch. (lol)
+Yes, I wrote this myself (6th semester Materials Engineering student). I'm still learning and building practical projects; if my profile interests you, please get in touch. (lol)
